@@ -1,6 +1,6 @@
 [package]
 name = "bb8-nebula-graph"
-version = "0.4.3"
+version = "0.4.4"
 authors = ["vkill <vkill.net@gmail.com>"]
 edition = "2018"
 description = "bb8 Nebula Graph pool"
@@ -14,7 +14,7 @@ readme = "README.md"
 
 [dependencies]
 nebula-graph-client = { path = "../nebula-graph-client", version = "0.3", default-features = false, features = [] }
-fbthrift-transport = { version = "0.4", default-features = false, features = ["tokio_io"] }
+fbthrift-transport = { version = "=0.4.3", default-features = false, features = ["tokio_io"] }
 
 bb8 = { version = "0.4", default-features = false, features = [] }
 async-trait = { version = "0.1", default-features = false, features = [] }
